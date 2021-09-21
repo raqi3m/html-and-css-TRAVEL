@@ -1,0 +1,42 @@
+// tiny-screens
+@mixin tiny-screens() {
+  @media (min-width: 320px) and (max-width: 679px) {
+    @content;
+  }
+}
+
+// desctop
+@mixin desctop() {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+
+// tablets
+@mixin tablet() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+// tabletsdown
+@mixin tabletsdown() {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+// Mobile
+@mixin mobile() {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+
+@mixin m600() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+

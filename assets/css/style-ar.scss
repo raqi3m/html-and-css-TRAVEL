@@ -1,0 +1,120 @@
+@import "_var.scss";
+@import "_mixin.scss";
+
+$start: right;
+$end: left;
+
+// Start Header ..
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+}
+ul {
+  padding-#{$start}: 0;
+}
+
+.header {
+  .navbar {
+    .navbar-collapse {
+      .nav-link {
+        &:hover {
+          @include tabletsdown {
+            margin-#{$end}: 5px;
+          }
+        }
+      }
+    }
+    .btn-mb {
+      @include tablet {
+        margin-#{$end}: 80px;
+      }
+    }
+    .btn-mb {
+      @include mobile {
+        margin-#{$end}: 60px;
+      }
+    }
+  }
+}
+
+.hero_box {
+  text-align: $start;
+  .col-form {
+    @include m600 {
+      text-align: $start;
+    }
+  }
+  label {
+    svg {
+      #{$start}: 0;
+    }
+  }
+
+  input[type="text"] {
+    &.se {
+      padding-#{$start}: 20px;
+    }
+  }
+
+  .col-form {
+    .r {
+      @include desctop {
+        border: none;
+        border-#{$end}: 1px solid #f0f4fc;
+      }
+    }
+  }
+}
+/* blogs */
+.blogs {
+  .blog {
+    .blog-#{$start} {
+      @include desctop {
+        width: 540px;
+      }
+    }
+    .blog-#{$end} {
+      @include desctop {
+        width: 540px;
+      }
+    }
+  }
+}
+
+.customers {
+  .item {
+    .icon {
+      $start: 15px;
+    }
+    p {
+      padding-#{$start}: 65px;
+      text-align: $start;
+    }
+  }
+  .customer {
+    justify-content: start;
+    .text {
+      margin-#{$start}: 10px;
+    }
+  }
+}
+
+footer {
+  ul {
+    li {
+      a {
+        margin-#{$start}: 15px;
+      }
+    }
+  }
+  .social-link {
+    margin-top: 0;
+    @include mobile {
+      display: block;
+    }
+  }
+}

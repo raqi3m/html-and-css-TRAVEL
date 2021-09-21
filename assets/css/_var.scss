@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+// font-family: 'Cairo', sans-serif;
+$font-family: 'Cairo', sans-serif;
+
+// Blue Color
+$main-color: #b4c6ee;
+$color1: #c3d1f1;
+$color2: #d2ddf5;
+$color3: #e1e8f8;
+$color4: #f0f4fc;
+$color5: #f7f9fe;
+
+$color-dr1: #1c4961;
+
+%transetion {
+  transition: all 0.5s ease-in-out;
+}
+
+%box-sh {
+  box-shadow: 0 0 20px 0 rgba($color: #3275d0, $alpha: 0.4);
+}
